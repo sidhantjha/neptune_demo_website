@@ -5,7 +5,7 @@
     "sectionTitle": "What We've Built",
     "timelineTitle": "Project Development Timeline",
     "timelineButton": "See Project Development Timeline",
-    "timelineNote": "Illustrative milestones — replace with verified project progress.",
+    "timelineNote": "From initial autonomy to physical prototyping.",
     "attribution": "Project Neptune by Lumyn"
   },
   "demos": [
@@ -50,27 +50,27 @@
   "timeline": [
     {
       "id": "milestone-01",
-      "title": "Concept exploration",
+      "title": "Initial Autonomy Development",
       "status": "completed",
-      "description": "Placeholder for early design work, concept sketches, and the engineering questions that shape the project."
+      "description": "Initial autonomy coding and development."
     },
     {
       "id": "milestone-02",
-      "title": "Prototype development",
-      "status": "in-progress",
-      "description": "Placeholder for prototype iterations, component experiments, and observations from the development process."
+      "title": "CAD Design & Performance Analysis",
+      "status": "completed",
+      "description": "Vehicle CAD design and performance analysis."
     },
     {
       "id": "milestone-03",
-      "title": "System integration",
-      "status": "planned",
-      "description": "Placeholder for bringing mechanical, electrical, and software elements together into a cohesive system."
+      "title": "Robotic Arm & Maintenance Autonomy",
+      "status": "in-progress",
+      "description": "Coding robotic-arm functionality and maintenance autonomy behaviors."
     },
     {
       "id": "milestone-04",
-      "title": "Field evaluation",
-      "status": "planned",
-      "description": "Placeholder for evaluation activities, test observations, and the next questions to explore in the field."
+      "title": "3D Printing Begins",
+      "status": "in-progress",
+      "description": "Fin components printed; fuselage printing underway."
     }
   ],
   "statusLabels": {
