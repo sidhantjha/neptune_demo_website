@@ -204,3 +204,13 @@
   .milestone { min-height: 225px; padding: 28px 24px; }
   .milestone h3 { font-size: 22px; }
 }
+
+/* Keep portrait photos fully visible and keep card copy vertically centered. */
+.demo-card{grid-template-rows:minmax(0,1fr)}
+.media-button,.media-shell,.card-copy{min-height:0}
+.media-button{overflow:hidden}
+.media-shell{position:relative;width:100%}
+.media-shell--image{background-position:center;background-repeat:no-repeat;background-size:cover}
+.media-shell--image::before{content:"";position:absolute;inset:-24px;background:inherit;filter:blur(24px) brightness(.85);transform:scale(1.06);pointer-events:none}
+.media-shell--image img{position:relative;z-index:1;display:block;object-fit:contain}
+@media(max-width:600px){.demo-card{grid-template-rows:245px minmax(0,1fr)}}
