@@ -1,0 +1,92 @@
+{
+  "project": {
+    "name": "Project Neptune",
+    "presentedBy": "Project Lumyn",
+    "sectionTitle": "What We've Built",
+    "timelineTitle": "Project Development Timeline",
+    "timelineButton": "See Project Development Timeline",
+    "timelineNote": "Illustrative milestones — replace with verified project progress.",
+    "attribution": "Project Neptune by Lumyn"
+  },
+  "demos": [
+    {
+      "id": "demo-01",
+      "title": "Form beneath the surface",
+      "category": "Concept visualization",
+      "order": 1,
+      "media": {
+        "type": "image",
+        "src": "/media/demo-01/preview.svg",
+        "alt": "Illustrative titanium underwater vehicle suspended in a dark studio"
+      },
+      "description": "A concept study of underwater form, balance, and flow."
+    },
+    {
+      "id": "demo-02",
+      "title": "Precision in motion",
+      "category": "Concept visualization",
+      "order": 2,
+      "media": {
+        "type": "image",
+        "src": "/media/demo-02/preview.svg",
+        "alt": "Illustrative concentric metal thruster assembly"
+      },
+      "description": "Exploring propulsion geometry and controlled movement."
+    },
+    {
+      "id": "demo-03",
+      "title": "Reading the unseen",
+      "category": "Concept visualization",
+      "order": 3,
+      "media": {
+        "type": "image",
+        "src": "/media/demo-03/preview.svg",
+        "alt": "Abstract sonar contours over a simulated seabed"
+      },
+      "description": "An abstract study of contours and spatial understanding."
+    },
+    {
+      "id": "demo-04",
+      "title": "Designed for depth",
+      "category": "Concept visualization",
+      "order": 4,
+      "media": {
+        "type": "image",
+        "src": "/media/demo-04/preview.svg",
+        "alt": "Illustrative metallic pressure vessel with exploded concentric rings"
+      },
+      "description": "Exploring pressure, structure, and layered assemblies."
+    }
+  ],
+  "timeline": [
+    {
+      "id": "milestone-01",
+      "title": "Concept exploration",
+      "status": "completed",
+      "description": "Placeholder for early design work, concept sketches, and the engineering questions that shape the project."
+    },
+    {
+      "id": "milestone-02",
+      "title": "Prototype development",
+      "status": "in-progress",
+      "description": "Placeholder for prototype iterations, component experiments, and observations from the development process."
+    },
+    {
+      "id": "milestone-03",
+      "title": "System integration",
+      "status": "planned",
+      "description": "Placeholder for bringing mechanical, electrical, and software elements together into a cohesive system."
+    },
+    {
+      "id": "milestone-04",
+      "title": "Field evaluation",
+      "status": "planned",
+      "description": "Placeholder for evaluation activities, test observations, and the next questions to explore in the field."
+    }
+  ],
+  "statusLabels": {
+    "completed": "Completed",
+    "in-progress": "In Progress",
+    "planned": "Planned"
+  }
+}
