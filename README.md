@@ -1,39 +1,55 @@
-# Project Neptune
+# Project Neptune — Lumyn
 
-Minimal React / TypeScript / Vite showcase. Motion handles the depth carousel, shared media expansion, and scroll handoff. Tailwind is available alongside composition CSS.
+**Live showcase:** https://neptune-demo-website.pages.dev/
 
-## Run
+Project Neptune is a Lumyn underwater robotics project exploring autonomous operation, vehicle design, robotic-arm manipulation, and maintenance behaviors. This website is a lightweight, media-first portfolio of its demonstrations and engineering progress—not a full project or company website.
+
+## What you'll see
+
+- **What We've Built:** Three media cards featuring early 3D-printed fins, a prototype update, and a Neptune solution demonstration video. Select a card to expand its media.
+- **Project Development Timeline:** A high-level view of initial autonomy development, CAD design and performance analysis, ongoing robotic-arm and maintenance-autonomy work, and the start of physical fabrication (printed fins and fuselage work).
+
+The showcase reflects work in progress; demonstrations and milestones should be updated as the team validates new results.
+
+## Run locally
+
+Node.js `24.13.0` is specified in `.node-version`.
 
 ```sh
-npm install
+npm ci
 npm run dev
 npm run build
 npm run lint
 ```
 
-## Deploy to Cloudflare
+## Update showcase content
 
-Use Node.js 24.13.0, pinned in `.node-version`. The website builds to `dist` and requires no environment variables.
+Edit `src/content/showcase.json` to change titles, summaries, ordering, and timeline entries. Add images or video files inside `public/media/demo-XX/` and reference them with a URL beginning `/media/` (omit `public`). Supported formats include JPEG, PNG, WebP, SVG, MP4, and WebM. Video entries may specify an optional `poster` image.
 
-### Cloudflare Workers with GitHub
+The three current demo assets are:
 
-Connect `sidhantjha/neptune_demo_website` in Cloudflare Workers & Pages and select the `main` branch. Set the root directory to the repository root, the build command to `npm run build`, and the deploy command to `npx wrangler deploy`. The included `wrangler.jsonc` serves the static files in `dist`.
+- `public/media/demo-01/demo1.jpeg`
+- `public/media/demo-02/image.png`
+- `public/media/demo-03/Project_Neptune_Demo.mp4`
 
-Cloudflare deployment guide — https://developers.cloudflare.com/workers/static-assets/
+Content is validated by `src/types/showcase.ts`. The carousel supports navigation buttons, pagination, arrow keys, and horizontal swipes. Media opens in an expanded viewer; reduced-motion preferences are respected.
 
-### Cloudflare Pages with GitHub
+## Deployment
 
-Create a Pages project connected to the same repository. Select production branch `main`, framework preset `React (Vite)`, build command `npm run build`, and build output directory `dist`. Leave the root directory at the repository root.
+The website is deployed on **Cloudflare Pages**, connected to this repository's `main` branch. New pushes to `main` trigger production builds.
 
-Cloudflare React guide — https://developers.cloudflare.com/pages/framework-guides/deploy-a-react-site/
+| Setting | Value |
+| --- | --- |
+| Production URL | https://neptune-demo-website.pages.dev/ |
+| Framework | React (Vite) |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | Repository root |
+| Environment variables | None required |
 
-Subsequent pushes to `main` trigger production builds once Git integration is connected. To preview a production build locally, run `npm run build` followed by `npm run preview`.
+For local production preview:
 
-## Content
-
-Edit `src/content/showcase.json`. Demos are sorted by `order`; pagination adapts automatically. Add an image (`.webp`, `.jpg`, `.png`, or `.svg`) or video (`.mp4`, `.webm`) to `public/media/demo-XX/`, then update `media.src`, `media.type`, `media.alt`, and optional video `media.poster`. Paths start with `/media/`. Images fill the card; expanded media preserves its aspect ratio. Videos have controls in the expanded viewer, never autoplay, and unmount when inactive. Missing files show a quiet fallback.
-
-All four supplied visuals are original SVG concept illustrations, not actual Neptune hardware or footage. `generate-media.mjs` regenerates them. Timeline entries are illustrative placeholders, not reported engineering progress. Replace these and the timeline note with verified content before sharing.
-
-Content is validated at startup in `src/types/showcase.ts`. Navigation supports buttons, pagination, arrow keys while focused in the carousel, and horizontal swipes. Escape or the backdrop closes the viewer; focus returns to the opening control. Reduced-motion preferences disable scroll choreography.
-
+```sh
+npm run build
+npm run preview
+```
