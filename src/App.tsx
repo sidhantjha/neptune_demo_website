@@ -6,7 +6,7 @@ import { showcase, type Demo } from './types/showcase'
 function Media({ demo, expanded = false, active = false }: { demo: Demo; expanded?: boolean; active?: boolean }) {
   const [failed, setFailed] = useState(false)
   if (failed || !demo.media.src) return <div className="fallback">{demo.title}<small>Media unavailable</small></div>
-  return demo.media.type === 'video' ? <video src={active || expanded ? demo.media.src : undefined} poster={demo.media.poster} controls={expanded} playsInline preload="metadata" onError={() => setFailed(true)} aria-label={demo.media.alt} /> : <img src={demo.media.src} alt={demo.media.alt} width="1200" height="760" loading={active ? 'eager' : 'lazy'} onError={() => setFailed(true)} draggable={false} />
+  return demo.media.type === 'video' ? <video src={active || expanded ? demo.media.src : undefined} poster={demo.media.poster} controls={expanded} playsInline preload={expanded ? 'auto' : 'metadata'} onError={() => setFailed(true)} aria-label={demo.media.alt} /> : <img src={demo.media.src} alt={demo.media.alt} width="1200" height="760" loading={active ? 'eager' : 'lazy'} onError={() => setFailed(true)} draggable={false} />
 }
 function Viewer({ demo, close }: { demo: Demo; close: () => void }) {
   const ref = useRef<HTMLDivElement>(null)
