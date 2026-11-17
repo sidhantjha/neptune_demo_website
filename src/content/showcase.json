@@ -11,51 +11,39 @@
   "demos": [
     {
       "id": "demo-01",
-      "title": "Form beneath the surface",
-      "category": "Concept visualization",
+      "title": "3D-Printed Fins",
+      "category": "Fabrication Update",
       "order": 1,
       "media": {
         "type": "image",
-        "src": "/media/demo-01/preview.svg",
-        "alt": "Illustrative titanium underwater vehicle suspended in a dark studio"
+        "src": "/media/demo-01/demo1.jpeg",
+        "alt": "Photograph from Neptune's initial fin fabrication"
       },
-      "description": "A concept study of underwater form, balance, and flow."
+      "description": "Our first 3D-printed fin components."
     },
     {
       "id": "demo-02",
-      "title": "Precision in motion",
-      "category": "Concept visualization",
+      "title": "Prototype Update",
+      "category": "Build Progress",
       "order": 2,
       "media": {
         "type": "image",
-        "src": "/media/demo-02/preview.svg",
-        "alt": "Illustrative concentric metal thruster assembly"
+        "src": "/media/demo-02/image.png",
+        "alt": "Project Neptune development photo"
       },
-      "description": "Exploring propulsion geometry and controlled movement."
+      "description": "A quick look at ongoing prototype work."
     },
     {
       "id": "demo-03",
-      "title": "Reading the unseen",
-      "category": "Concept visualization",
+      "title": "Neptune Solution Demo",
+      "category": "Video Demonstration",
       "order": 3,
       "media": {
-        "type": "image",
-        "src": "/media/demo-03/preview.svg",
-        "alt": "Abstract sonar contours over a simulated seabed"
+        "type": "video",
+        "src": "/media/demo-03/Project_Neptune_Demo.mp4",
+        "alt": "Project Neptune solution demonstration video"
       },
-      "description": "An abstract study of contours and spatial understanding."
-    },
-    {
-      "id": "demo-04",
-      "title": "Designed for depth",
-      "category": "Concept visualization",
-      "order": 4,
-      "media": {
-        "type": "image",
-        "src": "/media/demo-04/preview.svg",
-        "alt": "Illustrative metallic pressure vessel with exploded concentric rings"
-      },
-      "description": "Exploring pressure, structure, and layered assemblies."
+      "description": "A short demonstration of the Neptune solution."
     }
   ],
   "timeline": [
