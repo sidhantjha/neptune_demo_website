@@ -41,6 +41,7 @@
       "media": {
         "type": "video",
         "src": "/media/demo-03/Project_Neptune_Demo.mp4",
+        "poster": "/media/demo-03/poster.png",
         "alt": "Project Neptune solution demonstration video"
       },
       "description": "A short demonstration of the Neptune solution."
